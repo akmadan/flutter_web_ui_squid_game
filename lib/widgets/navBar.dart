@@ -31,7 +31,7 @@ Widget MobileNavBar() {
 
 Widget DeskTopNavBar() {
   return Container(
-    margin: EdgeInsets.symmetric(horizontal: 20),
+    margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
     height: 70,
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -53,16 +53,19 @@ Widget DeskTopNavBar() {
 
 Widget navButton(String text) {
   return Container(
+      margin: EdgeInsets.symmetric(horizontal: 4),
       child: TextButton(
           onPressed: () {},
-          child:
-              Text(text, style: TextStyle(color: Colors.white, fontSize: 18))));
+          child: Text(text,
+              style: TextStyle(
+                  color: text == 'Home' ? Colors.red : Colors.white,
+                  fontSize: 18))));
 }
 
 Widget navLogo() {
   return Container(
-    height: 30,
-    width: 80,
+    height: 60,
+    width: 180,
     child: Image.asset(netflix),
   );
 }

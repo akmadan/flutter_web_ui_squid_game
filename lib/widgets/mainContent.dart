@@ -53,7 +53,7 @@ Widget DesktopMainContent() {
                               children: [
                             Text(
                               'Life is like a game, there are many players. \nIf you don’t play with them, they’ll play with you...',
-                              style: TextStyle(fontSize: w! / 80),
+                              style: TextStyle(fontSize: w! / 70),
                             ),
                             SizedBox(
                               height: 20,
@@ -70,7 +70,7 @@ Widget DesktopMainContent() {
                                 Text(
                                   'Trending  #1',
                                   style: TextStyle(
-                                      color: Colors.white, fontSize: w! / 80),
+                                      color: Colors.white, fontSize: w! / 70),
                                 )
                               ],
                             )
